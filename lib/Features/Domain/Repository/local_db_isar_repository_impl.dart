@@ -1,8 +1,11 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:isar/isar.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:todo_app/Features/Domain/Repository/providers.dart';
 import 'package:todo_app/Features/domain/entities/todo.dart';
 import 'package:uuid/uuid.dart';
-import 'providers.dart';
+
 
 
 class LocalDbRepositoryIsarImpl extends LocalDbRepository {
@@ -54,8 +57,7 @@ class LocalDbRepositoryIsarImpl extends LocalDbRepository {
       }
     });
   }
-
-  @override
+@override
   Future<List<Todo>> loadTodos() async {
     final Isar isar = await db;
     final todos = await isar.todos.where(sort: Sort.desc).anyIsarId().findAll();
