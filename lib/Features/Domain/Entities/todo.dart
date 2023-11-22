@@ -5,7 +5,8 @@
 
 import 'package:isar/isar.dart';
 
-part "todo.g.dart";
+part 'todo.g.dart';
+
 
 @collection
 class Todo {

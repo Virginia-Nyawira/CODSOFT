@@ -1,8 +1,8 @@
 import 'package:isar/isar.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:todo_app/Features/Domain/Repository/local_db_repository.dart';
 import 'package:todo_app/Features/domain/entities/todo.dart';
 import 'package:uuid/uuid.dart';
+import 'providers.dart';
 
 
 class LocalDbRepositoryIsarImpl extends LocalDbRepository {
