@@ -1,9 +1,6 @@
 import 'package:todo_app/Core/UseCases/local_db_usecases.dart';
-
-
 import 'package:todo_app/Features/Domain/entities/todo.dart';
-
-import 'local_db_repository.dart';
+import '../../Features/Domain/Repository/local_db_repository.dart';
 
 class LocalDbUsecaseImpl extends LocalDbUsecase {
   final LocalDbRepository localDbRepository;
@@ -30,3 +27,4 @@ class LocalDbUsecaseImpl extends LocalDbUsecase {
     return localDbRepository.toggleTodo(id);
   }
 }
+
