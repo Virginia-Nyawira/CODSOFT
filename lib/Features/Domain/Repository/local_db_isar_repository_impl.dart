@@ -57,10 +57,10 @@ class LocalDbRepositoryIsarImpl extends LocalDbRepository {
       }
     });
   }
-@override
-  Future<List<Todo>> loadTodos() async {
-    final Isar isar = await db;
-    final todos = await isar.todos.where(sort: Sort.desc).anyIsarId().findAll();
-    return todos;
-  }
+// @override
+//   Future<List<Todo>> loadTodos() async {
+//     final Isar isar = await db;
+//     final todos = await isar.todos.where(sort: Sort.desc).anyIsarId().findAll();
+//     return todos;
+//   }
 }

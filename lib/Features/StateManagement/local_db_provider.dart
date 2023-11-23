@@ -89,20 +89,20 @@ class TodosNotifier extends StateNotifier<List<Todo>> {
 
   Future<void> addTodo({required String description}) async {
     await localDbUsecase.addTodo(description: description);
-    state = await localDbUsecase.loadTodos();
+    //state = await localDbUsecase.loadTodos();
   }
 
   Future<void> toggleTodo(String id) async {
     await localDbUsecase.toggleTodo(id);
-    state = await localDbUsecase.loadTodos();
+   // state = await localDbUsecase.loadTodos();
   }
 
   Future<void> deleteTodo(String id) async {
     await localDbUsecase.deleteTodo(id);
-    state = await localDbUsecase.loadTodos();
+   // state = await localDbUsecase.loadTodos();
   }
 
   Future<void> loadTodos() async {
-    state = await localDbUsecase.loadTodos();
+    //state = await localDbUsecase.loadTodos();
   }
 }

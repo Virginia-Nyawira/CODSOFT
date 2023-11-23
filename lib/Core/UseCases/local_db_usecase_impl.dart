@@ -17,10 +17,10 @@ class LocalDbUsecaseImpl extends LocalDbUsecase {
     return localDbRepository.deleteTodo(id);
   }
 
-  @override
-  Future<List<Todo>> loadTodos() {
-    return localDbRepository.loadTodos();
-  }
+  // @override
+  // Future<List<Todo>> loadTodos() {
+  //   return localDbRepository.loadTodos();
+  // }
 
   @override
   Future<void> toggleTodo(String id) {

@@ -15,11 +15,11 @@ class HomeScreen extends ConsumerStatefulWidget {
 }
 
 class HomeScreenState extends ConsumerState<HomeScreen> {
-  @override
-  void initState() {
-    super.initState();
-    ref.read(todosProvider.notifier).loadTodos();
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   ref.read(todosProvider.notifier).loadTodos();
+  // }
 
   @override
   Widget build(BuildContext context) {
